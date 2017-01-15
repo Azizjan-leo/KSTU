@@ -1,0 +1,29 @@
+﻿Build started 1/15/2017 17:25:14.
+     1>Project "D:\tryingAddGlutAndOtherShit\tryingAddGlutAndOtherShit\tryingAddGlutAndOtherShit.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\C++\Glut\glew-1.11.0\include\\" /ID:\C++\Glut\freeglut\include\ /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(8): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(29): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(44): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(74): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(102): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(106): warning C4305: '-=': truncation from 'double' to 'float'
+     1>d:\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(106): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+       Link:
+         C:\Program Files\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\C++\Glut\freeglut\lib /LIBPATH:"D:\C++\Glut\glew-1.11.0\lib" freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.lib" /MACHINE:X86 Debug\Car.obj
+         Debug\Enemies.obj
+         Debug\Enemy.obj
+         Debug\main.obj
+         Debug\Road.obj
+         Debug\User.obj
+         tryingAddGlutAndOtherShit.vcxproj -> D:\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.exe
+     1>Done Building Project "D:\tryingAddGlutAndOtherShit\tryingAddGlutAndOtherShit\tryingAddGlutAndOtherShit.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46
