@@ -103,7 +103,7 @@ void Timer(int value)
 		break;
 	case 2:
 		glutPostRedisplay();
-		glutTimerFunc(speed -= 0.001, Timer, value);
+		glutTimerFunc(speed -= 0.0001, Timer, value);
 		break;
 	case 0:
 		DrawGameOver();

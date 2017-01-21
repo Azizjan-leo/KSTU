@@ -1,6 +1,4 @@
-﻿  User.cpp
-  Road.cpp
-  main.cpp
+﻿  main.cpp
 d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(8): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
@@ -12,12 +10,5 @@ d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(74): wa
 d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(102): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
 d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(106): warning C4305: '-=': truncation from 'double' to 'float'
 d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(106): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-  Enemy.cpp
-d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\enemy.cpp(14): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Enemies.cpp
-d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\enemies.cpp(13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Car.cpp
-  Generating Code...
-d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\enemies.cpp(84): warning C4715: 'Enemies::Timer': not all control paths return a value
   tryingAddGlutAndOtherShit.vcxproj -> D:\KSTU\OOP\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.exe
   tryingAddGlutAndOtherShit.vcxproj -> D:\KSTU\OOP\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.pdb (Partial PDB)
