@@ -3,11 +3,9 @@
 #include "User.h"
 #include <iostream>
 #include <ctime>
-
 Enemies::Enemies() : first(NULL), it(NULL), last(NULL), count(0)
 {
 }
-
 Enemies::Enemies(unsigned short _num) : first(NULL), it(NULL), last(NULL), count(0)
 {
 	srand(time(NULL));

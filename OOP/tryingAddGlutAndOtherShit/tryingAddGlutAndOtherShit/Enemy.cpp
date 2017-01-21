@@ -2,18 +2,13 @@
 #include "Enemies.h"
 #include <cstdlib>
 #include <iostream>
-
 using namespace std;
-
 Enemy::Enemy():Car(0,400)
 {
 }
-
-
 Enemy::Enemy(short _x, float _y): Car(_x*-40.0, _y)
 {	
 }
-
 short Enemy::Move(float delta_y, User *User)
 {
 	if (((y + delta_y) >= 0 && User->GetLocation("y") <= 0) || ((y + delta_y) <= 0 && User->GetLocation("y") >= 0)) // on different sides of x axis
@@ -67,12 +62,10 @@ short Enemy::Move(float delta_y, User *User)
 		}
 	}
 }
-
 void Enemy::Draw()
 {
 	Car::Draw();
 }
-
 Enemy::~Enemy()
 {
 }

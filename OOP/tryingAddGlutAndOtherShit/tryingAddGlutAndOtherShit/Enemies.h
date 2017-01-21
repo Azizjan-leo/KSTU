@@ -4,7 +4,6 @@
 
 class Enemies :	protected Enemy
 {
-	
 private:
 	int count;
 	Enemy

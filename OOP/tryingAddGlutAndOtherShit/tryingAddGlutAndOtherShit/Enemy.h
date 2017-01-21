@@ -1,7 +1,6 @@
 #pragma once
 #include "Car.h"
 #include "User.h"
-
 class Enemy :
 	public Car
 {

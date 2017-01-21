@@ -2,53 +2,41 @@
 #include<ctime>
 #include<vector>
 #include<iostream>
-
 #include"Road.h";
 #include"Enemies.h"
 #include"User.h";
-
 using namespace std;
-
 vector <Road> road;
-
 float WinWid = 120.0f, WinHei = 350.0f, sensitivity = 5.1f, speed = 10.0f;
 User* user = new User(WinHei,2);
 Enemies enemies(30);
-
 void Keyboard(unsigned char key, int x, int y);
 void SKeyboard(int key, int x, int y);
 void Initialize();
 void Draw();
 void Timer(int);
-void DrawGameOver();
-
+void DrawGameOver()
 int main(int argc, char** argv)
 {
 	srand(time(NULL));
-	
 	for (int i = WinHei/2; i >= -WinHei/2; i -= 20)
 	{
 		Road curb(i, WinWid);
 		road.push_back(curb);
 	}
-	
 	//Initialization
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(WinWid, WinHei);
 	glutInitWindowPosition(450, 130);
 	glutCreateWindow("Race");
-
 	//Registration
 	glutDisplayFunc(Draw);//Drawing
 	glutTimerFunc(speed, Timer, 1); // animation func registration
-	
 	glutKeyboardFunc(Keyboard);
 	glutSpecialFunc(SKeyboard);
-
 	Initialize();
 	glutMainLoop();
-		
 	system("pause");
 	return 0;
 }
@@ -56,7 +44,6 @@ int main(int argc, char** argv)
 void DrawGameOver()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
-	
 	glRasterPos2f(-54.0f, 40.0f);
 	for (char *c = "Game over"; *c != '\0'; c++) {
 		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, *c);
@@ -78,7 +65,6 @@ void DrawGameOver()
 		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, *pchar);
 		pchar++;
 	}
-	
 	glutSwapBuffers();
 }
 
@@ -110,8 +96,6 @@ void Timer(int value)
 		break;
 	}
 }
-
-
 void Draw()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -127,14 +111,10 @@ void Draw()
 		else
 			++i;
 	}
-
 	enemies.Draw(WinHei);
-
 	user->Draw();
-
 	glutSwapBuffers(); // for GLUT_DOUBLE 
 }
-
 void SKeyboard(int key, int x, int y)
 {
 	switch (key)
@@ -157,10 +137,8 @@ void SKeyboard(int key, int x, int y)
 		break;
 	}
 }
-
 void Keyboard(unsigned char key, int x, int y)
 {
-
 	switch (key)
 	{
 	case 'a':
@@ -181,7 +159,6 @@ void Keyboard(unsigned char key, int x, int y)
 		break;
 	}
 }
-
 void Initialize()
 {
 	glClearColor(0.0, 0.0, 0.0, 1.0);
