@@ -15,7 +15,7 @@ void SKeyboard(int key, int x, int y);
 void Initialize();
 void Draw();
 void Timer(int);
-void DrawGameOver()
+void DrawGameOver();
 int main(int argc, char** argv)
 {
 	srand(time(NULL));

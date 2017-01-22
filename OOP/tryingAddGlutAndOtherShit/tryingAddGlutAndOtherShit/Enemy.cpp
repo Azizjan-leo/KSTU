@@ -6,7 +6,7 @@ using namespace std;
 Enemy::Enemy():Car(0,400)
 {
 }
-Enemy::Enemy(short _x, float _y): Car(_x*-40.0, _y)
+Enemy::Enemy(short _x, float _y): Car(_x*-37.0, _y)
 {	
 }
 short Enemy::Move(float delta_y, User *User)
