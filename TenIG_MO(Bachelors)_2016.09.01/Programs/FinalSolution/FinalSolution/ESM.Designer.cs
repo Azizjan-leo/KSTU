@@ -127,6 +127,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(51, 20);
             this.textBox5.TabIndex = 27;
+            this.textBox5.Text = "0.01";
             // 
             // label5
             // 
@@ -145,6 +146,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(38, 21);
             this.textBox3.TabIndex = 25;
+            this.textBox3.Text = "-2.99";
             // 
             // label2
             // 
@@ -183,6 +185,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(105, 21);
             this.textBox1.TabIndex = 21;
+            this.textBox1.Text = "x^3+x^2-8*x-8";
             // 
             // Start_Btn
             // 

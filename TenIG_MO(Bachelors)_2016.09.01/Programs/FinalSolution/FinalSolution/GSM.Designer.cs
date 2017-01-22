@@ -56,6 +56,7 @@
             this.button2.TabIndex = 51;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // minCheckBox
             // 
@@ -140,6 +141,7 @@
             this.InA.Name = "InA";
             this.InA.Size = new System.Drawing.Size(46, 21);
             this.InA.TabIndex = 41;
+            this.InA.Text = "-4";
             // 
             // label2
             // 
@@ -178,6 +180,7 @@
             this.InFx.Name = "InFx";
             this.InFx.Size = new System.Drawing.Size(115, 21);
             this.InFx.TabIndex = 37;
+            this.InFx.Text = "x^3+x^2-8*x-8";
             // 
             // Start_Btn
             // 
@@ -197,6 +200,7 @@
             this.InTol.Name = "InTol";
             this.InTol.Size = new System.Drawing.Size(141, 21);
             this.InTol.TabIndex = 52;
+            this.InTol.Text = "0.000000001";
             // 
             // label7
             // 
@@ -215,6 +219,7 @@
             this.InB.Name = "InB";
             this.InB.Size = new System.Drawing.Size(46, 21);
             this.InB.TabIndex = 54;
+            this.InB.Text = "0";
             // 
             // GSM
             // 

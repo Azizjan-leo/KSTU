@@ -43,27 +43,27 @@ namespace FinalSolution
             textBox2.Text = "";
 
             r = (Math.Sqrt(5.0) - 1) / 2;
-            textBox2.AppendText("Step 1 r = (5^1/2 - 1) / 2 =  " + r);
+            textBox2.AppendText(" Step 1 r = (5^1/2 - 1) / 2 =  " + r);
             textBox2.AppendText(Environment.NewLine);
 
             x1 = a + (1 - r) * (b - a);
-            textBox2.AppendText("Step 2 x1 = a + (1 - r) * (b - a) => x1 =  " + x1);
+            textBox2.AppendText(" Step 2 x1 = a + (1 - r) * (b - a) => x1 =  " + x1);
             textBox2.AppendText(Environment.NewLine);
 
             fx1 = func(x1);
-            textBox2.AppendText("Step 3 f(x1) = " + fx1);
+            textBox2.AppendText(" Step 3 f(x1) = " + fx1);
             textBox2.AppendText(Environment.NewLine);
 
             x2 = a + r * (b - a);
-            textBox2.AppendText("Step 4 x2 = a + r * (b - a) => x2 = " + x2);
+            textBox2.AppendText(" Step 4 x2 = a + r * (b - a) => x2 = " + x2);
             textBox2.AppendText(Environment.NewLine);
 
             fx2 = func(x2);
-            textBox2.AppendText("Step 5 f(x2) = ");
+            textBox2.AppendText(" Step 5 f(x2) = ");
 
             k = 0;
             textBox2.AppendText(Environment.NewLine);
-            if (minCheckBox.Checked)
+            if (!minCheckBox.Checked)
             {
                 do
                 {
@@ -77,11 +77,11 @@ namespace FinalSolution
                     textBox2.AppendText("Iteration " + ++k);
                     textBox2.AppendText(Environment.NewLine);
 
-                    textBox2.AppendText("Step 1 k = k + 1 = " + k);
+                    textBox2.AppendText(" Step 1 k = k + 1 = " + k);
                     textBox2.AppendText(Environment.NewLine);
 
                     // Step 2
-                    textBox2.AppendText("Step 2 yf1 < yf2 => " + fx1 + " < " + fx2 + " - ");
+                    textBox2.AppendText(" Step 2 yf1 < yf2 => " + fx1 + " < " + fx2 + " - ");
 
                     if (fx1 < fx2)
                     {
@@ -154,11 +154,11 @@ namespace FinalSolution
                     textBox2.AppendText("Iteration " + ++k);
                     textBox2.AppendText(Environment.NewLine);
 
-                    textBox2.AppendText("Step 1 k = k + 1 = " + k);
+                    textBox2.AppendText(" Step 1 k = k + 1 = " + k);
                     textBox2.AppendText(Environment.NewLine);
 
                     // Step 2
-                    textBox2.AppendText("Step 2 yf1 < yf2 => " + fx1 + " < " + fx2 + " - ");
+                    textBox2.AppendText(" Step 2 yf1 < yf2 => " + fx1 + " < " + fx2 + " - ");
 
                     if (fx1 > fx2)
                     {
@@ -220,12 +220,13 @@ namespace FinalSolution
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+   private void button2_Click_1(object sender, EventArgs e)
         {
             InA.Text = "";
             InB.Text = "";
             InTol.Text = "";
             minCheckBox.Checked = false;
+            textBox2.Text = "";
 
             outX1.Text = "";
             outAbsBA.Text = "";

@@ -8,7 +8,7 @@ double function(double);
 int main()
 {
 	long double a = -4, b = 0, r, x1, x2, f1, f2, tol = 0.01;
-	int k, k_Max = 6;
+	int k, k_Max = 40;
 
 	cout << "Input: a = " << a << "\n       b = " << b << "\n       k_Max = " << k_Max << endl;
 	cout << "       f(x) =  x^3 + x^2 - 8 * x - 8\n" << endl;
