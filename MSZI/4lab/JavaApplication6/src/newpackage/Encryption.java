@@ -650,29 +650,40 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
                     
                     if(toEncrypt.length()%3 != 0)
                     {
-                        Integer[][] arr = new Integer[2][2];
-                        arr[0][0] = 5;
-                        arr[0][1] = 2;
-                        arr[1][0] = 2;
-                        arr[1][1] = 1;  
+                        Integer[][] arr = { {5,2},{2,1}};
+                        int num = 0;
+                        
+                        for(int i = 0; i < toEncrypt.length()/2; i++)
+                        {                        
+                            for(int j = 0; j < 2; j++)
+                            {
+                                num = 0;
+                                for(int k = 0; k < 2; k++)
+                                {
+                                    num += alfabet.indexOf(Character.toString(toEncrypt.charAt(k+i*2))) * arr[j][k];
+                                }
+
+                                jTxtAreaMain.append(Integer.toString(num) + " ");
+                            }
+                        }                 
+                        
                     }
                     else
                     {
                         Integer[][] arr = { {14,8,3}, {8,5,2}, {3,2,1} };
-                        int size = toEncrypt.length()/3;
-                        Integer[][] res = new Integer[3][size];
-
-                        for(int i = 0; i < size; i++)
+                        int num = 0;
+                        
+                        for(int i = 0; i < toEncrypt.length()/3; i++)
                         {                        
                             for(int j = 0; j < 3; j++)
                             {
-                                res[j][i] = 0;
+                                num = 0;
                                 for(int k = 0; k < 3; k++)
                                 {
-                                    res[j][i] += alfabet.indexOf(Character.toString(toEncrypt.charAt(k+i*3))) * arr[j][k];
+                                    num += alfabet.indexOf(Character.toString(toEncrypt.charAt(k+i*3))) * arr[j][k];
                                 }
 
-                                jTxtAreaMain.append(Integer.toString(res[j][i]) + " ");
+                                jTxtAreaMain.append(Integer.toString(num) + " ");
                             }
                         }                     
                     }         
@@ -682,6 +693,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
             else // decryption
             {
                 String toEnc = jTxtAreaMain.getText();
+                jTxtAreaMain.setText("");
                 String[] items = toEnc.replaceAll("\\s", ",").split(",");
                 int[] results = new int[items.length];
                 for (int i = 0; i < items.length; i++) // to convert string from area to int array
@@ -689,28 +701,43 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
                 
                 if(results.length%3 == 0)
                 {
-                    Integer[][] arr = { {1,-2,1}, {-2,5,2}, {3,2,1} };
-                        int size = results.length / 3;
-                        Integer[][] res = new Integer[3][size];
+                    Integer[][] arr = { {1,-2,1}, {-2,5,-4}, {1,-4,6} };
+                        int num = 0;
 
-                        for(int i = 0; i < size; i++)
+                        for(int i = 0; i < results.length / 3; i++)
                         {                        
                             for(int j = 0; j < 3; j++)
                             {
-                                res[j][i] = 0;
+                                num = 0;
                                 for(int k = 0; k < 3; k++)
                                 {
-                                    res[j][i] += alfabet.indexOf(Character.toString(toEncrypt.charAt(k+i*3))) * arr[j][k];
+                                    num += results[k+i*3] * arr[j][k];
                                 }
 
-                                jTxtAreaMain.append(Integer.toString(res[j][i]) + " ");
+                                jTxtAreaMain.append(Character.toString(alfabet.charAt(num)));
                             }
                         }                     
                 }
                 else
                 {
-                    
+                       Integer[][] arr = { {1,-2},{-2,5}};
+                        int num = 0;
+                        
+                        for(int i = 0; i < results.length / 2; i++)
+                        {                        
+                            for(int j = 0; j < 2; j++)
+                            {
+                                num = 0;
+                                for(int k = 0; k < 2; k++)
+                                {
+                                    num += results[k+i*2] * arr[j][k];
+                                }
+
+                                jTxtAreaMain.append(Character.toString(alfabet.charAt(num)));
+                            }
+                        }               
                 }
+                jButton5.setText("Anal");
             }
         }
         if(error.length() > 0)
