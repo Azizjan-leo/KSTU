@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using info.lundin.math;
 
@@ -206,7 +206,7 @@ namespace FinalSolution
             NoutX1.Text = x1.ToString();
             outYf1.Text = fx1.ToString();
             outK.Text = k.ToString();
-            outRelError.Text = RelError.ToString();
+            outRelError.Text = String.Format(RelError.ToString(),"0e0");
             outCond.Text = cond.ToString();
 
         }

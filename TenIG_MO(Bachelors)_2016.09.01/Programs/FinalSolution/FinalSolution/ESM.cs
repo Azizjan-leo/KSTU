@@ -123,7 +123,8 @@ namespace FinalSolution
                     }
 
                     //x^3+x^2-8*x-8  max in point: x1*= –2.0; min in point: x2*= 1.33; find a minimum;
-                    textBox2.AppendText("Iteration " + ++k + ":");
+                    k++;
+                    textBox2.AppendText("Iteration " + k + ":");
                     textBox2.AppendText(Environment.NewLine);
 
                     textBox2.AppendText(" Step 1: k = k + 1 = " + k);
@@ -164,11 +165,11 @@ namespace FinalSolution
                         textBox2.AppendText(" Step 6: yf1 <= yf0 - ");
 
                     }
-                } while (true);
+                } while ( k < 20);
             }
             SolY.Text = fx1.ToString();
             SolX.Text = x1.ToString();
-            AbsH.Text = Math.Abs(H).ToString();
+            AbsH.Text = String.Format(Math.Abs(H).ToString(), "0e0");
         }
     }
 }
