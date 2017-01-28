@@ -44,11 +44,15 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Start_Btn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.checkBoxMax = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxKMax = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(20, 323);
+            this.button2.Location = new System.Drawing.Point(8, 343);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(419, 23);
             this.button2.TabIndex = 35;
@@ -60,7 +64,7 @@
             this.checkBoxMin.AutoSize = true;
             this.checkBoxMin.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMin.Location = new System.Drawing.Point(387, 11);
+            this.checkBoxMin.Location = new System.Drawing.Point(273, 37);
             this.checkBoxMin.Name = "checkBoxMin";
             this.checkBoxMin.Size = new System.Drawing.Size(54, 22);
             this.checkBoxMin.TabIndex = 34;
@@ -71,7 +75,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 302);
+            this.label6.Location = new System.Drawing.Point(7, 322);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 18);
             this.label6.TabIndex = 33;
@@ -80,7 +84,7 @@
             // AbsH
             // 
             this.AbsH.Enabled = false;
-            this.AbsH.Location = new System.Drawing.Point(84, 301);
+            this.AbsH.Location = new System.Drawing.Point(72, 321);
             this.AbsH.Name = "AbsH";
             this.AbsH.Size = new System.Drawing.Size(186, 20);
             this.AbsH.TabIndex = 32;
@@ -89,7 +93,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 275);
+            this.label4.Location = new System.Drawing.Point(8, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 18);
             this.label4.TabIndex = 31;
@@ -99,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 248);
+            this.label3.Location = new System.Drawing.Point(8, 268);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 18);
             this.label3.TabIndex = 30;
@@ -108,7 +112,7 @@
             // SolX
             // 
             this.SolX.Enabled = false;
-            this.SolX.Location = new System.Drawing.Point(51, 276);
+            this.SolX.Location = new System.Drawing.Point(39, 296);
             this.SolX.Name = "SolX";
             this.SolX.Size = new System.Drawing.Size(219, 20);
             this.SolX.TabIndex = 29;
@@ -116,14 +120,14 @@
             // SolY
             // 
             this.SolY.Enabled = false;
-            this.SolY.Location = new System.Drawing.Point(51, 251);
+            this.SolY.Location = new System.Drawing.Point(39, 271);
             this.SolY.Name = "SolY";
             this.SolY.Size = new System.Drawing.Size(219, 20);
             this.SolY.TabIndex = 28;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(329, 14);
+            this.textBox5.Location = new System.Drawing.Point(343, 11);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(51, 20);
             this.textBox5.TabIndex = 27;
@@ -133,7 +137,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(244, 12);
+            this.label5.Location = new System.Drawing.Point(258, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 18);
             this.label5.TabIndex = 26;
@@ -142,7 +146,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(200, 11);
+            this.textBox3.Location = new System.Drawing.Point(214, 8);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(38, 21);
             this.textBox3.TabIndex = 25;
@@ -152,7 +156,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(169, 11);
+            this.label2.Location = new System.Drawing.Point(183, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(25, 18);
             this.label2.TabIndex = 24;
@@ -162,7 +166,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 13);
+            this.label1.Location = new System.Drawing.Point(33, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 18);
             this.label1.TabIndex = 23;
@@ -171,7 +175,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(24, 39);
+            this.textBox2.Location = new System.Drawing.Point(12, 59);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -181,7 +185,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(58, 10);
+            this.textBox1.Location = new System.Drawing.Point(72, 7);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(105, 21);
             this.textBox1.TabIndex = 21;
@@ -190,7 +194,7 @@
             // Start_Btn
             // 
             this.Start_Btn.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Start_Btn.Location = new System.Drawing.Point(276, 251);
+            this.Start_Btn.Location = new System.Drawing.Point(264, 271);
             this.Start_Btn.Name = "Start_Btn";
             this.Start_Btn.Size = new System.Drawing.Size(163, 69);
             this.Start_Btn.TabIndex = 20;
@@ -198,11 +202,56 @@
             this.Start_Btn.UseVisualStyleBackColor = true;
             this.Start_Btn.Click += new System.EventHandler(this.Start_Btn_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(163, 37);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 18);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "What to find:";
+            // 
+            // checkBoxMax
+            // 
+            this.checkBoxMax.AutoSize = true;
+            this.checkBoxMax.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMax.Location = new System.Drawing.Point(333, 37);
+            this.checkBoxMax.Name = "checkBoxMax";
+            this.checkBoxMax.Size = new System.Drawing.Size(58, 22);
+            this.checkBoxMax.TabIndex = 37;
+            this.checkBoxMax.Text = "Max";
+            this.checkBoxMax.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(40, 37);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 18);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "kMax";
+            // 
+            // textBoxKMax
+            // 
+            this.textBoxKMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKMax.Location = new System.Drawing.Point(95, 34);
+            this.textBoxKMax.Name = "textBoxKMax";
+            this.textBoxKMax.Size = new System.Drawing.Size(62, 21);
+            this.textBoxKMax.TabIndex = 38;
+            this.textBoxKMax.Text = "100";
+            // 
             // ESM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 356);
+            this.ClientSize = new System.Drawing.Size(438, 370);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBoxKMax);
+            this.Controls.Add(this.checkBoxMax);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.checkBoxMin);
             this.Controls.Add(this.label6);
@@ -244,5 +293,9 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Start_Btn;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox checkBoxMax;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxKMax;
     }
 }

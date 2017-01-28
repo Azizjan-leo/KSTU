@@ -43,6 +43,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
         forKTable = new javax.swing.JTextArea();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,7 +56,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
 
         jTxtAreaMain.setColumns(20);
         jTxtAreaMain.setRows(5);
-        jTxtAreaMain.setText("azizja");
+        jTxtAreaMain.setText("I love MSZI");
         jScrollPane1.setViewportView(jTxtAreaMain);
 
         jBtnCaesar.setText("Caesar");
@@ -75,7 +76,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
             }
         });
 
-        jTxtFieldKWord.setText("pidor");
+        jTxtFieldKWord.setText("10010110");
         jTxtFieldKWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTxtFieldKWordActionPerformed(evt);
@@ -121,6 +122,13 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
             }
         });
 
+        jButton6.setText("Verman");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -136,7 +144,8 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(jButton4))
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -170,6 +179,8 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
                         .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton4))
                     .addGroup(layout.createSequentialGroup()
@@ -744,6 +755,77 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
             jTxtAreaMain.setText(error);
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+         String error = "";
+        if(jTxtAreaMain.getText().length() == 0)
+            error = "There is nothing to encrypt";
+        else
+        {
+            if(jTxtFieldKWord.getText().length() == 0 || jTxtFieldKWord.getText().length() > 8)
+                    error = "There is no key to encrypt";
+                else
+                {
+                    String sKey = jTxtFieldKWord.getText();
+                    Integer[] intKey = new Integer[8];
+                    for(int i = 0; i < 8; i++)
+                    {
+                        intKey[i] = Character.getNumericValue(sKey.charAt(i));
+                        if(intKey[i] > 1)
+                        {
+                            error = "There is inalid number " + Integer.toString(intKey[i]) + " in the key";
+                            break;
+                        }
+                    }
+                    if(error.length() == 0)
+                    {
+                        if(jButton6.getText() == "Verman")
+                        {
+                            
+                            String asciiString = jTxtAreaMain.getText();
+                            byte[] bytes = asciiString.getBytes();  
+                            StringBuilder binary = new StringBuilder();  
+                            for (byte b : bytes)  
+                            {  
+                               int val = b;  
+                               for (int i = 0; i < 8; i++)  
+                               {  
+                                  binary.append((((val & 128) == 0 ? 0 : 1)+intKey[i])%2);  
+                                  val <<= 1;  
+                               }
+                               binary.append(" ");
+                            }
+                                
+                            jTxtAreaMain.setText(binary.toString());
+                            jButton6.setText("DeVerman");
+                        }
+                        else // DeCryption
+                        {
+                           
+                            String s = jTxtAreaMain.getText().replaceAll("\\s", "");
+                            String s2 = ""; // for each char  
+                            String s3 = ""; // for each bin
+                            
+                            
+                            for(int i = 0; i <= s.length()-8; i += 8) //this is a little tricky.  we want [0, 7], [9, 16], etc (increment index by 9 if bytes are space-delimited)
+                            {
+                                s3 = "";
+                                for(int j = i; j < i+8; j++)
+                                {
+                                    s3 += (Character.getNumericValue(s.charAt(j)) + intKey[j%8])%2;
+                                }
+                                 s2 += (char)Integer.parseInt(s3, 2);
+                                 
+                            }
+                            jTxtAreaMain.setText(s2);
+                            jButton6.setText("Verman");
+                        }
+                    }
+                }
+            }
+        if(error.length() > 0)
+            jTxtAreaMain.setText(error);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -789,6 +871,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

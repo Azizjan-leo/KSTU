@@ -46,6 +46,9 @@
             this.InTol = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.InB = new System.Windows.Forms.TextBox();
+            this.maxCheckBox = new System.Windows.Forms.CheckBox();
+            this.inKMax = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -219,13 +222,47 @@
             this.InB.Name = "InB";
             this.InB.Size = new System.Drawing.Size(46, 21);
             this.InB.TabIndex = 54;
-            this.InB.Text = "0";
+            this.InB.Text = "2";
+            // 
+            // maxCheckBox
+            // 
+            this.maxCheckBox.AutoSize = true;
+            this.maxCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.maxCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxCheckBox.Location = new System.Drawing.Point(320, 17);
+            this.maxCheckBox.Name = "maxCheckBox";
+            this.maxCheckBox.Size = new System.Drawing.Size(58, 22);
+            this.maxCheckBox.TabIndex = 55;
+            this.maxCheckBox.Text = "Max";
+            this.maxCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // inKMax
+            // 
+            this.inKMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inKMax.Location = new System.Drawing.Point(269, 42);
+            this.inKMax.Name = "inKMax";
+            this.inKMax.Size = new System.Drawing.Size(46, 21);
+            this.inKMax.TabIndex = 57;
+            this.inKMax.Text = "100";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(218, 43);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 18);
+            this.label8.TabIndex = 56;
+            this.label8.Text = "kMax";
             // 
             // GSM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 382);
+            this.Controls.Add(this.inKMax);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.maxCheckBox);
             this.Controls.Add(this.InB);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.InTol);
@@ -272,5 +309,8 @@
         private System.Windows.Forms.TextBox InTol;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox InB;
+        private System.Windows.Forms.CheckBox maxCheckBox;
+        private System.Windows.Forms.TextBox inKMax;
+        private System.Windows.Forms.Label label8;
     }
 }
