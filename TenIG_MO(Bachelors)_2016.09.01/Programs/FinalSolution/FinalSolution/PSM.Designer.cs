@@ -38,20 +38,20 @@
             this.minCheckBox = new System.Windows.Forms.CheckBox();
             this.inR = new System.Windows.Forms.TextBox();
             this.inH0 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.H0Label = new System.Windows.Forms.Label();
+            this.RLabel = new System.Windows.Forms.Label();
             this.inEpsilon = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.EpsilonLabel = new System.Windows.Forms.Label();
             this.Start_Btn = new System.Windows.Forms.Button();
             this.inX0 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.X0Label = new System.Windows.Forms.Label();
+            this.FuncLabel = new System.Windows.Forms.Label();
+            this.Calcs = new System.Windows.Forms.TextBox();
             this.inFx = new System.Windows.Forms.TextBox();
             this.maxCheckBox = new System.Windows.Forms.CheckBox();
             this.inKMax = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.KmaxLabel = new System.Windows.Forms.Label();
+            this.MaxMinLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Reset_Btn
@@ -149,25 +149,25 @@
             this.inH0.TabIndex = 34;
             this.inH0.Text = "0.2";
             // 
-            // label7
+            // H0Label
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 40);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 18);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "H0:";
+            this.H0Label.AutoSize = true;
+            this.H0Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.H0Label.Location = new System.Drawing.Point(13, 40);
+            this.H0Label.Name = "H0Label";
+            this.H0Label.Size = new System.Drawing.Size(34, 18);
+            this.H0Label.TabIndex = 33;
+            this.H0Label.Text = "H0:";
             // 
-            // label6
+            // RLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(160, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 18);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "R:";
+            this.RLabel.AutoSize = true;
+            this.RLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RLabel.Location = new System.Drawing.Point(160, 37);
+            this.RLabel.Name = "RLabel";
+            this.RLabel.Size = new System.Drawing.Size(25, 18);
+            this.RLabel.TabIndex = 32;
+            this.RLabel.Text = "R:";
             // 
             // inEpsilon
             // 
@@ -177,15 +177,15 @@
             this.inEpsilon.TabIndex = 31;
             this.inEpsilon.Text = "0.01";
             // 
-            // label5
+            // EpsilonLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(233, 8);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 18);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Epsilon:";
+            this.EpsilonLabel.AutoSize = true;
+            this.EpsilonLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EpsilonLabel.Location = new System.Drawing.Point(233, 8);
+            this.EpsilonLabel.Name = "EpsilonLabel";
+            this.EpsilonLabel.Size = new System.Drawing.Size(69, 18);
+            this.EpsilonLabel.TabIndex = 30;
+            this.EpsilonLabel.Text = "Epsilon:";
             // 
             // Start_Btn
             // 
@@ -207,35 +207,35 @@
             this.inX0.TabIndex = 28;
             this.inX0.Text = "-3";
             // 
-            // label2
+            // X0Label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(162, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 18);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "x0:";
+            this.X0Label.AutoSize = true;
+            this.X0Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.X0Label.Location = new System.Drawing.Point(162, 7);
+            this.X0Label.Name = "X0Label";
+            this.X0Label.Size = new System.Drawing.Size(30, 18);
+            this.X0Label.TabIndex = 27;
+            this.X0Label.Text = "x0:";
             // 
-            // label1
+            // FuncLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 18);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "f(x)";
+            this.FuncLabel.AutoSize = true;
+            this.FuncLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FuncLabel.Location = new System.Drawing.Point(12, 9);
+            this.FuncLabel.Name = "FuncLabel";
+            this.FuncLabel.Size = new System.Drawing.Size(33, 18);
+            this.FuncLabel.TabIndex = 26;
+            this.FuncLabel.Text = "f(x)";
             // 
-            // textBox2
+            // Calcs
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(17, 85);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(342, 199);
-            this.textBox2.TabIndex = 25;
+            this.Calcs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Calcs.Location = new System.Drawing.Point(17, 85);
+            this.Calcs.Multiline = true;
+            this.Calcs.Name = "Calcs";
+            this.Calcs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Calcs.Size = new System.Drawing.Size(342, 199);
+            this.Calcs.TabIndex = 25;
             // 
             // inFx
             // 
@@ -266,34 +266,34 @@
             this.inKMax.TabIndex = 46;
             this.inKMax.Text = "100";
             // 
-            // label9
+            // KmaxLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(245, 36);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 18);
-            this.label9.TabIndex = 45;
-            this.label9.Text = "kMax";
+            this.KmaxLabel.AutoSize = true;
+            this.KmaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KmaxLabel.Location = new System.Drawing.Point(245, 36);
+            this.KmaxLabel.Name = "KmaxLabel";
+            this.KmaxLabel.Size = new System.Drawing.Size(48, 18);
+            this.KmaxLabel.TabIndex = 45;
+            this.KmaxLabel.Text = "kMax";
             // 
-            // label10
+            // MaxMinLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(78, 60);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 18);
-            this.label10.TabIndex = 47;
-            this.label10.Text = "What to find:";
+            this.MaxMinLabel.AutoSize = true;
+            this.MaxMinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaxMinLabel.Location = new System.Drawing.Point(78, 60);
+            this.MaxMinLabel.Name = "MaxMinLabel";
+            this.MaxMinLabel.Size = new System.Drawing.Size(104, 18);
+            this.MaxMinLabel.TabIndex = 47;
+            this.MaxMinLabel.Text = "What to find:";
             // 
             // PSM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 374);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.MaxMinLabel);
             this.Controls.Add(this.inKMax);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.KmaxLabel);
             this.Controls.Add(this.maxCheckBox);
             this.Controls.Add(this.Reset_Btn);
             this.Controls.Add(this.label8);
@@ -305,15 +305,15 @@
             this.Controls.Add(this.minCheckBox);
             this.Controls.Add(this.inR);
             this.Controls.Add(this.inH0);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.H0Label);
+            this.Controls.Add(this.RLabel);
             this.Controls.Add(this.inEpsilon);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.EpsilonLabel);
             this.Controls.Add(this.Start_Btn);
             this.Controls.Add(this.inX0);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.X0Label);
+            this.Controls.Add(this.FuncLabel);
+            this.Controls.Add(this.Calcs);
             this.Controls.Add(this.inFx);
             this.Name = "PSM";
             this.Text = "PSM";
@@ -334,19 +334,19 @@
         private System.Windows.Forms.CheckBox minCheckBox;
         private System.Windows.Forms.TextBox inR;
         private System.Windows.Forms.TextBox inH0;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label H0Label;
+        private System.Windows.Forms.Label RLabel;
         private System.Windows.Forms.TextBox inEpsilon;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label EpsilonLabel;
         private System.Windows.Forms.Button Start_Btn;
         private System.Windows.Forms.TextBox inX0;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label X0Label;
+        private System.Windows.Forms.Label FuncLabel;
+        private System.Windows.Forms.TextBox Calcs;
         private System.Windows.Forms.TextBox inFx;
         private System.Windows.Forms.CheckBox maxCheckBox;
         private System.Windows.Forms.TextBox inKMax;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label KmaxLabel;
+        private System.Windows.Forms.Label MaxMinLabel;
     }
 }

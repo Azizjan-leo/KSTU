@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.Reset_Btn = new System.Windows.Forms.Button();
             this.checkBoxMin = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.AbsHLabel = new System.Windows.Forms.Label();
             this.AbsH = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.SolXLabel = new System.Windows.Forms.Label();
+            this.SolYLabel = new System.Windows.Forms.Label();
             this.SolX = new System.Windows.Forms.TextBox();
             this.SolY = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ToleranceBox = new System.Windows.Forms.TextBox();
+            this.ToleranceLabel = new System.Windows.Forms.Label();
+            this.X0Box = new System.Windows.Forms.TextBox();
+            this.X0Label = new System.Windows.Forms.Label();
+            this.FuncLabel = new System.Windows.Forms.Label();
+            this.Calcs = new System.Windows.Forms.TextBox();
+            this.FuncBox = new System.Windows.Forms.TextBox();
             this.Start_Btn = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.MaxMinLabel = new System.Windows.Forms.Label();
             this.checkBoxMax = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxKMax = new System.Windows.Forms.TextBox();
+            this.k_maxLabel = new System.Windows.Forms.Label();
+            this.kmaxBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button2
+            // Reset_Btn
             // 
-            this.button2.Location = new System.Drawing.Point(8, 343);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(419, 23);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Reset_Btn.Location = new System.Drawing.Point(8, 343);
+            this.Reset_Btn.Name = "Reset_Btn";
+            this.Reset_Btn.Size = new System.Drawing.Size(419, 23);
+            this.Reset_Btn.TabIndex = 35;
+            this.Reset_Btn.Text = "Reset";
+            this.Reset_Btn.UseVisualStyleBackColor = true;
+            this.Reset_Btn.Click += new System.EventHandler(this.button2_Click);
             // 
             // checkBoxMin
             // 
@@ -71,15 +72,15 @@
             this.checkBoxMin.Text = "Min";
             this.checkBoxMin.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // AbsHLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 322);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 18);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "abs(H)";
+            this.AbsHLabel.AutoSize = true;
+            this.AbsHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbsHLabel.Location = new System.Drawing.Point(7, 322);
+            this.AbsHLabel.Name = "AbsHLabel";
+            this.AbsHLabel.Size = new System.Drawing.Size(60, 18);
+            this.AbsHLabel.TabIndex = 33;
+            this.AbsHLabel.Text = "Abs(H)";
             // 
             // AbsH
             // 
@@ -89,25 +90,25 @@
             this.AbsH.Size = new System.Drawing.Size(186, 20);
             this.AbsH.TabIndex = 32;
             // 
-            // label4
+            // SolXLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 295);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 18);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "x1";
+            this.SolXLabel.AutoSize = true;
+            this.SolXLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SolXLabel.Location = new System.Drawing.Point(8, 295);
+            this.SolXLabel.Name = "SolXLabel";
+            this.SolXLabel.Size = new System.Drawing.Size(25, 18);
+            this.SolXLabel.TabIndex = 31;
+            this.SolXLabel.Text = "x1";
             // 
-            // label3
+            // SolYLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 268);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 18);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Y";
+            this.SolYLabel.AutoSize = true;
+            this.SolYLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SolYLabel.Location = new System.Drawing.Point(8, 268);
+            this.SolYLabel.Name = "SolYLabel";
+            this.SolYLabel.Size = new System.Drawing.Size(18, 18);
+            this.SolYLabel.TabIndex = 30;
+            this.SolYLabel.Text = "Y";
             // 
             // SolX
             // 
@@ -125,71 +126,71 @@
             this.SolY.Size = new System.Drawing.Size(219, 20);
             this.SolY.TabIndex = 28;
             // 
-            // textBox5
+            // ToleranceBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(343, 11);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(51, 20);
-            this.textBox5.TabIndex = 27;
-            this.textBox5.Text = "0.01";
+            this.ToleranceBox.Location = new System.Drawing.Point(343, 11);
+            this.ToleranceBox.Name = "ToleranceBox";
+            this.ToleranceBox.Size = new System.Drawing.Size(51, 20);
+            this.ToleranceBox.TabIndex = 27;
+            this.ToleranceBox.Text = "0.01";
             // 
-            // label5
+            // ToleranceLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(258, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 18);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Tolerance";
+            this.ToleranceLabel.AutoSize = true;
+            this.ToleranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToleranceLabel.Location = new System.Drawing.Point(258, 9);
+            this.ToleranceLabel.Name = "ToleranceLabel";
+            this.ToleranceLabel.Size = new System.Drawing.Size(83, 18);
+            this.ToleranceLabel.TabIndex = 26;
+            this.ToleranceLabel.Text = "Tolerance";
             // 
-            // textBox3
+            // X0Box
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(214, 8);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(38, 21);
-            this.textBox3.TabIndex = 25;
-            this.textBox3.Text = "-2.99";
+            this.X0Box.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.X0Box.Location = new System.Drawing.Point(214, 8);
+            this.X0Box.Name = "X0Box";
+            this.X0Box.Size = new System.Drawing.Size(38, 21);
+            this.X0Box.TabIndex = 25;
+            this.X0Box.Text = "-2.99";
             // 
-            // label2
+            // X0Label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(183, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 18);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "x0";
+            this.X0Label.AutoSize = true;
+            this.X0Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.X0Label.Location = new System.Drawing.Point(183, 8);
+            this.X0Label.Name = "X0Label";
+            this.X0Label.Size = new System.Drawing.Size(25, 18);
+            this.X0Label.TabIndex = 24;
+            this.X0Label.Text = "x0";
             // 
-            // label1
+            // FuncLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 18);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "f(x)";
+            this.FuncLabel.AutoSize = true;
+            this.FuncLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FuncLabel.Location = new System.Drawing.Point(33, 10);
+            this.FuncLabel.Name = "FuncLabel";
+            this.FuncLabel.Size = new System.Drawing.Size(33, 18);
+            this.FuncLabel.TabIndex = 23;
+            this.FuncLabel.Text = "f(x)";
             // 
-            // textBox2
+            // Calcs
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(12, 59);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(415, 201);
-            this.textBox2.TabIndex = 22;
+            this.Calcs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Calcs.Location = new System.Drawing.Point(12, 59);
+            this.Calcs.Multiline = true;
+            this.Calcs.Name = "Calcs";
+            this.Calcs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Calcs.Size = new System.Drawing.Size(415, 201);
+            this.Calcs.TabIndex = 22;
             // 
-            // textBox1
+            // FuncBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(72, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 21);
-            this.textBox1.TabIndex = 21;
-            this.textBox1.Text = "x^3+x^2-8*x-8";
+            this.FuncBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FuncBox.Location = new System.Drawing.Point(72, 7);
+            this.FuncBox.Name = "FuncBox";
+            this.FuncBox.Size = new System.Drawing.Size(105, 21);
+            this.FuncBox.TabIndex = 21;
+            this.FuncBox.Text = "x^3+x^2-8*x-8";
             // 
             // Start_Btn
             // 
@@ -202,15 +203,15 @@
             this.Start_Btn.UseVisualStyleBackColor = true;
             this.Start_Btn.Click += new System.EventHandler(this.Start_Btn_Click);
             // 
-            // label7
+            // MaxMinLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(163, 37);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 18);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "What to find:";
+            this.MaxMinLabel.AutoSize = true;
+            this.MaxMinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaxMinLabel.Location = new System.Drawing.Point(163, 37);
+            this.MaxMinLabel.Name = "MaxMinLabel";
+            this.MaxMinLabel.Size = new System.Drawing.Size(104, 18);
+            this.MaxMinLabel.TabIndex = 36;
+            this.MaxMinLabel.Text = "What to find:";
             // 
             // checkBoxMax
             // 
@@ -224,49 +225,49 @@
             this.checkBoxMax.Text = "Max";
             this.checkBoxMax.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // k_maxLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(40, 37);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 18);
-            this.label8.TabIndex = 39;
-            this.label8.Text = "kMax";
+            this.k_maxLabel.AutoSize = true;
+            this.k_maxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k_maxLabel.Location = new System.Drawing.Point(40, 37);
+            this.k_maxLabel.Name = "k_maxLabel";
+            this.k_maxLabel.Size = new System.Drawing.Size(48, 18);
+            this.k_maxLabel.TabIndex = 39;
+            this.k_maxLabel.Text = "kMax";
             // 
-            // textBoxKMax
+            // kmaxBox
             // 
-            this.textBoxKMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKMax.Location = new System.Drawing.Point(95, 34);
-            this.textBoxKMax.Name = "textBoxKMax";
-            this.textBoxKMax.Size = new System.Drawing.Size(62, 21);
-            this.textBoxKMax.TabIndex = 38;
-            this.textBoxKMax.Text = "100";
+            this.kmaxBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kmaxBox.Location = new System.Drawing.Point(95, 34);
+            this.kmaxBox.Name = "kmaxBox";
+            this.kmaxBox.Size = new System.Drawing.Size(62, 21);
+            this.kmaxBox.TabIndex = 38;
+            this.kmaxBox.Text = "200";
             // 
             // ESM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 370);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBoxKMax);
+            this.Controls.Add(this.k_maxLabel);
+            this.Controls.Add(this.kmaxBox);
             this.Controls.Add(this.checkBoxMax);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.MaxMinLabel);
+            this.Controls.Add(this.Reset_Btn);
             this.Controls.Add(this.checkBoxMin);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.AbsHLabel);
             this.Controls.Add(this.AbsH);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.SolXLabel);
+            this.Controls.Add(this.SolYLabel);
             this.Controls.Add(this.SolX);
             this.Controls.Add(this.SolY);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ToleranceBox);
+            this.Controls.Add(this.ToleranceLabel);
+            this.Controls.Add(this.X0Box);
+            this.Controls.Add(this.X0Label);
+            this.Controls.Add(this.FuncLabel);
+            this.Controls.Add(this.Calcs);
+            this.Controls.Add(this.FuncBox);
             this.Controls.Add(this.Start_Btn);
             this.Name = "ESM";
             this.Text = "ESM";
@@ -277,25 +278,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Reset_Btn;
         private System.Windows.Forms.CheckBox checkBoxMin;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label AbsHLabel;
         private System.Windows.Forms.TextBox AbsH;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label SolXLabel;
+        private System.Windows.Forms.Label SolYLabel;
         private System.Windows.Forms.TextBox SolX;
         private System.Windows.Forms.TextBox SolY;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ToleranceBox;
+        private System.Windows.Forms.Label ToleranceLabel;
+        private System.Windows.Forms.TextBox X0Box;
+        private System.Windows.Forms.Label X0Label;
+        private System.Windows.Forms.Label FuncLabel;
+        private System.Windows.Forms.TextBox Calcs;
+        private System.Windows.Forms.TextBox FuncBox;
         private System.Windows.Forms.Button Start_Btn;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label MaxMinLabel;
         private System.Windows.Forms.CheckBox checkBoxMax;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBoxKMax;
+        private System.Windows.Forms.Label k_maxLabel;
+        private System.Windows.Forms.TextBox kmaxBox;
     }
 }
