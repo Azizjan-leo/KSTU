@@ -18,13 +18,21 @@ namespace FinalSolution
         {
             parser.Values.Add("x", 0);
         }
-        public double diff_func(double x)
+       /* public double diff_func(double x)
         {
             return (func(x + 0.00001 / 2) - func(x - 0.00001 / 2)) / 0.00001;
-        }
-        public double double_diff_func(double x)
+        }*/
+       /* public double double_diff_func(double x)
         {
             return (diff_func(x + 0.00001 / 2) - diff_func(x - 0.00001 / 2)) / 0.00001;
+        }*/
+        public double double_diff_func(double x)
+        {
+            return Math.Sin(x) *-1;
+        }
+        public double diff_func(double x)
+        {
+            return Math.Cos(x) *-1;
         }
         public void NewLine()
         {
