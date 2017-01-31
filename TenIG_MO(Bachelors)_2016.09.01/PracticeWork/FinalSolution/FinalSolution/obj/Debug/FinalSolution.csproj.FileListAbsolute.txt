@@ -38,3 +38,6 @@ D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\PracticeWork\FinalSolution\FinalSolution\
 D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\PracticeWork\FinalSolution\FinalSolution\obj\Debug\FinalSolution.Properties.Resources.resources
 D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\PracticeWork\FinalSolution\FinalSolution\obj\Debug\FinalSolution.PSM.resources
 D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\PracticeWork\FinalSolution\FinalSolution\obj\Debug\FinalSolution.csproj.GenerateResource.Cache
+D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\PracticeWork\FinalSolution\FinalSolution\bin\Debug\aziretParser.dll
+D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\PracticeWork\FinalSolution\FinalSolution\bin\Debug\info.lundin.math.dll
+D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\PracticeWork\FinalSolution\FinalSolution\obj\Debug\FinalSolution.TryAziret.resources
