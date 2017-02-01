@@ -1,0 +1,4 @@
+﻿  Enemy.cpp
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\enemy.cpp(10): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  tryingAddGlutAndOtherShit.vcxproj -> D:\KSTU\OOP\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.exe
+  tryingAddGlutAndOtherShit.vcxproj -> D:\KSTU\OOP\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.pdb (Partial PDB)
