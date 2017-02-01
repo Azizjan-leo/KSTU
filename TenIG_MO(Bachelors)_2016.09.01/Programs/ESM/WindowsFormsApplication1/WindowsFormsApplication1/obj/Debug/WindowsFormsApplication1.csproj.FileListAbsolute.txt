@@ -1,0 +1,35 @@
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\My Labs\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\info.lundin.math.dll
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\MathParser.dll
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Interop.MSScriptControl.dll
+D:\TenIG_MO(Bachelors)_2016.09.01\Programs\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.ResolveComReference.cache
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Interop.MSScriptControl.dll
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.ResolveComReference.cache
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\info.lundin.math.dll
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\MathParser.dll
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Fifth Semester\TenIG_MO(Bachelors)_2016.09.01\Programs\ESM\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
