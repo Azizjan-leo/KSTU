@@ -16,7 +16,7 @@ namespace FinalSolution
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TryAziret());
+            Application.Run(new Form1());
         }
     }
 }

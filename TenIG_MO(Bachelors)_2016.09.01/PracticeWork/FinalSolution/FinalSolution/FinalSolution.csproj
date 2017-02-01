@@ -88,12 +88,6 @@
     <Compile Include="PSM.Designer.cs">
       <DependentUpon>PSM.cs</DependentUpon>
     </Compile>
-    <Compile Include="TryAziret.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TryAziret.Designer.cs">
-      <DependentUpon>TryAziret.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="ESM.resx">
       <DependentUpon>ESM.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,9 +111,6 @@
     </Compile>
     <EmbeddedResource Include="PSM.resx">
       <DependentUpon>PSM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TryAziret.resx">
-      <DependentUpon>TryAziret.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

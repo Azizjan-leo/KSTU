@@ -21,20 +21,28 @@ namespace FinalSolution
         }
         public double diff_func(double x)
         {
-            return (func(x + 0.00001 / 2) - func(x - 0.00001 / 2)) / 0.00001;
+            parser.Values.Remove("x");
+            parser.Values.Add("x", x);
+            String DerStrFunc = ParserDecimal.ReturnDerivative(inFx.Text);
+            return parser.Parse(DerStrFunc);
+            //return (func(x + 0.00001 / 2) - func(x - 0.00001 / 2)) / 0.00001;
         }
        public double double_diff_func(double x)
         {
-            return (diff_func(x + 0.00001 / 2) - diff_func(x - 0.00001 / 2)) / 0.00001;
+           parser.Values.Remove("x");
+            parser.Values.Add("x", x);
+            String DerStrFunc = ParserDecimal.ReturnDerivative(inFx.Text);
+            DerStrFunc = ParserDecimal.ReturnDerivative(DerStrFunc);
+            return parser.Parse(DerStrFunc);
+            //return (diff_func(x + 0.00001 / 2) - diff_func(x - 0.00001 / 2)) / 0.00001;
         }
-       
+
         public void NewLine()
         {
             Calcs.AppendText(Environment.NewLine);
         }
         public double func(double x)
         {
-
             parser.Values.Remove("x");
             parser.Values.Add("x", x);
             return parser.Parse(inFx.Text);
