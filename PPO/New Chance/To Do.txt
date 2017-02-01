@@ -1,4 +1,0 @@
-﻿Use Case
-Диаграмма потоков
-Activity
-Classes

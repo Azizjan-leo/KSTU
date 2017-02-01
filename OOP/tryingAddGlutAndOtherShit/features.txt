@@ -1,2 +1,0 @@
-car wid: 32 pix
-curb wid: 7 pix (with empty space)
