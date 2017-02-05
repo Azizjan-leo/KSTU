@@ -45,6 +45,10 @@
             this.StartBtn = new System.Windows.Forms.Button();
             this.InKMaxLabel = new System.Windows.Forms.Label();
             this.InKMax = new System.Windows.Forms.TextBox();
+            this.OutDer1 = new System.Windows.Forms.TextBox();
+            this.OutDer2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ResetBtn
@@ -125,7 +129,7 @@
             this.Calcs.Multiline = true;
             this.Calcs.Name = "Calcs";
             this.Calcs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Calcs.Size = new System.Drawing.Size(349, 228);
+            this.Calcs.Size = new System.Drawing.Size(349, 177);
             this.Calcs.TabIndex = 64;
             // 
             // InFxLabel
@@ -283,11 +287,51 @@
             this.InKMax.TabIndex = 80;
             this.InKMax.Text = "100";
             // 
+            // OutDer1
+            // 
+            this.OutDer1.Enabled = false;
+            this.OutDer1.Location = new System.Drawing.Point(163, 285);
+            this.OutDer1.Name = "OutDer1";
+            this.OutDer1.Size = new System.Drawing.Size(100, 20);
+            this.OutDer1.TabIndex = 82;
+            // 
+            // OutDer2
+            // 
+            this.OutDer2.Enabled = false;
+            this.OutDer2.Location = new System.Drawing.Point(163, 306);
+            this.OutDer2.Name = "OutDer2";
+            this.OutDer2.Size = new System.Drawing.Size(100, 20);
+            this.OutDer2.TabIndex = 83;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 306);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 18);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Second Derivitive";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(20, 285);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 18);
+            this.label2.TabIndex = 85;
+            this.label2.Text = "First Derivitive";
+            // 
             // NSM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 454);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.OutDer2);
+            this.Controls.Add(this.OutDer1);
             this.Controls.Add(this.InKMaxLabel);
             this.Controls.Add(this.InKMax);
             this.Controls.Add(this.StartBtn);
@@ -347,5 +391,9 @@
         private System.Windows.Forms.Button StartBtn;
         private System.Windows.Forms.Label InKMaxLabel;
         private System.Windows.Forms.TextBox InKMax;
+        private System.Windows.Forms.TextBox OutDer1;
+        private System.Windows.Forms.TextBox OutDer2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -44,6 +44,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,7 +57,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
 
         jTxtAreaMain.setColumns(20);
         jTxtAreaMain.setRows(5);
-        jTxtAreaMain.setText("I love MSZI");
+        jTxtAreaMain.setText("aziz");
         jScrollPane1.setViewportView(jTxtAreaMain);
 
         jBtnCaesar.setText("Caesar");
@@ -76,7 +77,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
             }
         });
 
-        jTxtFieldKWord.setText("10010110");
+        jTxtFieldKWord.setText("az");
         jTxtFieldKWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTxtFieldKWordActionPerformed(evt);
@@ -129,6 +130,13 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
             }
         });
 
+        jButton7.setText("Viginer Table");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -141,11 +149,12 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
                     .addComponent(jBtnCaesarK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jBtnCaesar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jButton4))
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jButton4))
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -181,6 +190,8 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
                         .addComponent(jButton5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton4))
                     .addGroup(layout.createSequentialGroup()
@@ -191,7 +202,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
                             .addComponent(jLabel1)
                             .addComponent(jTxtFieldKWord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane2)))
                 .addContainerGap())
         );
 
@@ -340,43 +351,17 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
         }
         return keyword;
     }
- 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         if(!jTxtAreaMain.getText().equals("") && !jTxtFieldKWord.getText().equals("")){
-             int first, n;
-            first = (int)'a';
-            n = 26;
-        String str = jTxtAreaMain.getText();
-        String key = jTxtFieldKWord.getText();
-        
-        String keyword = GenerateKeyword(str, key);
-       
-        char[] text = str.toCharArray();
-        char[] keyArr = keyword.toCharArray();
-        int num = 0;
-        str = "";
-        if(jButton1.getText() == "Viginer"){
-            //зашифровка
-            for(int i = 0; i<text.length; i++){
-               // num = (((int)text[i] + (int)keyArr[i])-2*first)%n;
-                num = (((int)text[i] - first+1) + ((int)keyArr[i])-first+1)%n;
-                str+= Character.toString((char)(num+first - 1));
-            }
-            jButton1.setText("DeViginer");
-        }
-        else{
-        //расшифровка
-            for(int i = 0; i<text.length; i++){
-                num = ((int)text[i] - (int)keyArr[i]+n)%n;
-                if(num+first-1 == 96)
-                    str+= Character.toString((char)(122));
-                else
-                str+= Character.toString((char)(num+first-1));
-            }
-             jButton1.setText("Viginer");
-        }
-        jTxtAreaMain.setText(str);
-         }
+        String str = jTxtAreaMain.getText(), keyword = GenerateKeyword(str, jTxtFieldKWord.getText()), StrResult = "";
+        if(jButton1.getText() == "Viginer"){//зашифровка
+            for(int i = 0; i<str.length(); i++)
+                StrResult += alfabet.charAt((alfabet.indexOf(keyword.charAt(i)) + alfabet.indexOf(str.charAt(i)))%26);
+            jButton1.setText("DeViginer");            }
+        else{ //расшифровка
+            for(int i = 0; i<str.length(); i++) 
+                StrResult += alfabet.charAt((alfabet.indexOf(str.charAt(i)) - alfabet.indexOf(keyword.charAt(i)))<0? 26 + (alfabet.indexOf(str.charAt(i)) - alfabet.indexOf(keyword.charAt(i))):(alfabet.indexOf(str.charAt(i)) - alfabet.indexOf(keyword.charAt(i))));
+            jButton1.setText("Viginer");            }
+        jTxtAreaMain.setText(StrResult);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -447,13 +432,6 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
     //for Playfair if on same row
     static int getNewPlace(int num, String act)
     {
-        /*if(act == "Playfair")
-            return (num  < 13) ? ++num % 13 : ++num % 26;
-        else
-            if(num == 0)
-                return 12;
-            else
-                return --num;*/
         return (act == "Playfair") ? ((num  < 13) ? ++num % 13 : ++num % 26) : ((num == 0) ? 12 : --num);
     }
   
@@ -826,6 +804,16 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
             jTxtAreaMain.setText(error);
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+      
+        for(int i = 0; i < 26; i++)
+        {
+            for(int j = i; j < 26+i; j++)
+                forKTable.append(Character.toString(alfabet.charAt(j%26)));
+           forKTable.append("\n");
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -872,6 +860,7 @@ String alfabet = "abcdefghijklmnopqrstuvwxyz";
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

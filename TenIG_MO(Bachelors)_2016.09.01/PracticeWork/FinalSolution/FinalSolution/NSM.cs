@@ -46,6 +46,7 @@ namespace FinalSolution
             parser.Values.Remove("x");
             parser.Values.Add("x", x);
             return parser.Parse(inFx.Text);
+           // ParserDecimal.Compute(inFx.Text, (decimal)x);
         }
 
         public bool getError()
@@ -245,6 +246,9 @@ namespace FinalSolution
                 outK.Text = k.ToString();
                 outRelError.Text = String.Format(RelError.ToString(), "0e0");
                 outCond.Text = cond.ToString();
+                String DerStrFunc = ParserDecimal.ReturnDerivative(inFx.Text);
+                OutDer1.Text = DerStrFunc;
+                OutDer2.Text = ParserDecimal.ReturnDerivative(DerStrFunc);
             }
         }
         private void Reset_Btn_Click(object sender, EventArgs e)
@@ -255,6 +259,8 @@ namespace FinalSolution
             outYf1.Text = "";
             NoutX1.Text = "";
             Calcs.Text = "";
+            OutDer1.Text = "";
+            OutDer2.Text = "";
         }
     }
 }

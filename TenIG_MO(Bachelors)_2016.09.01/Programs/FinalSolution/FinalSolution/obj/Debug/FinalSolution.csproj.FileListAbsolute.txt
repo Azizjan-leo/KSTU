@@ -25,3 +25,5 @@ D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\Programs\FinalSolution\FinalSolution\obj\
 D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\Programs\FinalSolution\FinalSolution\obj\Debug\FinalSolution.Properties.Resources.resources
 D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\Programs\FinalSolution\FinalSolution\obj\Debug\FinalSolution.PSM.resources
 D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\Programs\FinalSolution\FinalSolution\obj\Debug\FinalSolution.csproj.GenerateResource.Cache
+D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\Programs\FinalSolution\FinalSolution\bin\Debug\aziretParser.dll
+D:\KSTU\TenIG_MO(Bachelors)_2016.09.01\Programs\FinalSolution\FinalSolution\bin\Debug\Extreme.Numerics.Net40.dll

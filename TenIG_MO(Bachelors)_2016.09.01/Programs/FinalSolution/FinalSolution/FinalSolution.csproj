@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="aziretParser">
+      <HintPath>..\..\..\..\..\Libraries\aziretParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Extreme.Numerics.Net40">
+      <HintPath>..\..\..\..\..\Libraries\Extreme.Numerics.Net40.dll</HintPath>
+    </Reference>
     <Reference Include="info.lundin.math">
       <HintPath>..\..\..\..\..\C++\MathLibraries\info.lundin.math.dll</HintPath>
     </Reference>

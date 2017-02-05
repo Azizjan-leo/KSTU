@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using info.lundin.math;
+using aziretParser;
 
 namespace FinalSolution
 {
@@ -26,11 +27,12 @@ namespace FinalSolution
             parser.Values.Add("x", 0);
         }
 
-        public double func(double x)
+        public decimal func(decimal x)
         {
-            parser.Values.Remove("x");
-            parser.Values.Add("x", x);
-            return parser.Parse(FuncBox.Text);
+            /* parser.Values.Remove("x");
+             parser.Values.Add("x", x);
+             return parser.Parse(FuncBox.Text);*/
+            return ParserDecimal.Compute(FuncBox.Text, x);
 
         }
 
@@ -71,7 +73,7 @@ namespace FinalSolution
         {
             if (!getError())
             {
-                double x0 = double.Parse(X0Box.Text, System.Globalization.NumberStyles.Any), fx0 = func(x0), tol = double.Parse(ToleranceBox.Text, System.Globalization.NumberStyles.Any), H = tol, fx1, x1;
+                decimal x0 = decimal.Parse(X0Box.Text, System.Globalization.NumberStyles.Any), fx0 = func(x0), tol = decimal.Parse(ToleranceBox.Text, System.Globalization.NumberStyles.Any), H = tol, fx1, x1;
                 int k = 0; bool solved = false;
                 int kMax = int.Parse(kmaxBox.Text);
                 Calcs.AppendText("Step 1: H = tol => H = " + H);

@@ -40,5 +40,10 @@ namespace FinalSolution
             NSM nsm = new NSM();
             nsm.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "file://D:\\KSTU\\TenIG_MO(Bachelors)_2016.09.01\\PracticeWork\\FinalSolution\\Manual.chm");
+        }
     }
 }

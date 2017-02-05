@@ -52,7 +52,7 @@
             // 
             // Reset_Btn
             // 
-            this.Reset_Btn.Location = new System.Drawing.Point(8, 343);
+            this.Reset_Btn.Location = new System.Drawing.Point(8, 396);
             this.Reset_Btn.Name = "Reset_Btn";
             this.Reset_Btn.Size = new System.Drawing.Size(419, 23);
             this.Reset_Btn.TabIndex = 35;
@@ -65,7 +65,7 @@
             this.checkBoxMin.AutoSize = true;
             this.checkBoxMin.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMin.Location = new System.Drawing.Point(273, 37);
+            this.checkBoxMin.Location = new System.Drawing.Point(273, 90);
             this.checkBoxMin.Name = "checkBoxMin";
             this.checkBoxMin.Size = new System.Drawing.Size(54, 22);
             this.checkBoxMin.TabIndex = 34;
@@ -76,7 +76,7 @@
             // 
             this.AbsHLabel.AutoSize = true;
             this.AbsHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbsHLabel.Location = new System.Drawing.Point(7, 322);
+            this.AbsHLabel.Location = new System.Drawing.Point(7, 375);
             this.AbsHLabel.Name = "AbsHLabel";
             this.AbsHLabel.Size = new System.Drawing.Size(60, 18);
             this.AbsHLabel.TabIndex = 33;
@@ -85,7 +85,7 @@
             // AbsH
             // 
             this.AbsH.Enabled = false;
-            this.AbsH.Location = new System.Drawing.Point(72, 321);
+            this.AbsH.Location = new System.Drawing.Point(72, 374);
             this.AbsH.Name = "AbsH";
             this.AbsH.Size = new System.Drawing.Size(186, 20);
             this.AbsH.TabIndex = 32;
@@ -94,7 +94,7 @@
             // 
             this.SolXLabel.AutoSize = true;
             this.SolXLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolXLabel.Location = new System.Drawing.Point(8, 295);
+            this.SolXLabel.Location = new System.Drawing.Point(5, 351);
             this.SolXLabel.Name = "SolXLabel";
             this.SolXLabel.Size = new System.Drawing.Size(25, 18);
             this.SolXLabel.TabIndex = 31;
@@ -104,7 +104,7 @@
             // 
             this.SolYLabel.AutoSize = true;
             this.SolYLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolYLabel.Location = new System.Drawing.Point(8, 268);
+            this.SolYLabel.Location = new System.Drawing.Point(7, 326);
             this.SolYLabel.Name = "SolYLabel";
             this.SolYLabel.Size = new System.Drawing.Size(18, 18);
             this.SolYLabel.TabIndex = 30;
@@ -113,7 +113,7 @@
             // SolX
             // 
             this.SolX.Enabled = false;
-            this.SolX.Location = new System.Drawing.Point(39, 296);
+            this.SolX.Location = new System.Drawing.Point(39, 349);
             this.SolX.Name = "SolX";
             this.SolX.Size = new System.Drawing.Size(219, 20);
             this.SolX.TabIndex = 29;
@@ -121,43 +121,43 @@
             // SolY
             // 
             this.SolY.Enabled = false;
-            this.SolY.Location = new System.Drawing.Point(39, 271);
+            this.SolY.Location = new System.Drawing.Point(39, 324);
             this.SolY.Name = "SolY";
             this.SolY.Size = new System.Drawing.Size(219, 20);
             this.SolY.TabIndex = 28;
             // 
             // ToleranceBox
             // 
-            this.ToleranceBox.Location = new System.Drawing.Point(343, 11);
+            this.ToleranceBox.Location = new System.Drawing.Point(71, 61);
             this.ToleranceBox.Name = "ToleranceBox";
-            this.ToleranceBox.Size = new System.Drawing.Size(51, 20);
+            this.ToleranceBox.Size = new System.Drawing.Size(335, 20);
             this.ToleranceBox.TabIndex = 27;
-            this.ToleranceBox.Text = "0.01";
+            this.ToleranceBox.Text = "1e-10";
             // 
             // ToleranceLabel
             // 
             this.ToleranceLabel.AutoSize = true;
             this.ToleranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToleranceLabel.Location = new System.Drawing.Point(258, 9);
+            this.ToleranceLabel.Location = new System.Drawing.Point(34, 60);
             this.ToleranceLabel.Name = "ToleranceLabel";
-            this.ToleranceLabel.Size = new System.Drawing.Size(83, 18);
+            this.ToleranceLabel.Size = new System.Drawing.Size(32, 18);
             this.ToleranceLabel.TabIndex = 26;
-            this.ToleranceLabel.Text = "Tolerance";
+            this.ToleranceLabel.Text = "Tol";
             // 
             // X0Box
             // 
             this.X0Box.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.X0Box.Location = new System.Drawing.Point(214, 8);
+            this.X0Box.Location = new System.Drawing.Point(71, 38);
             this.X0Box.Name = "X0Box";
-            this.X0Box.Size = new System.Drawing.Size(38, 21);
+            this.X0Box.Size = new System.Drawing.Size(335, 21);
             this.X0Box.TabIndex = 25;
-            this.X0Box.Text = "-2.99";
+            this.X0Box.Text = "-2.000000001";
             // 
             // X0Label
             // 
             this.X0Label.AutoSize = true;
             this.X0Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.X0Label.Location = new System.Drawing.Point(183, 8);
+            this.X0Label.Location = new System.Drawing.Point(40, 38);
             this.X0Label.Name = "X0Label";
             this.X0Label.Size = new System.Drawing.Size(25, 18);
             this.X0Label.TabIndex = 24;
@@ -176,7 +176,7 @@
             // Calcs
             // 
             this.Calcs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calcs.Location = new System.Drawing.Point(12, 59);
+            this.Calcs.Location = new System.Drawing.Point(12, 112);
             this.Calcs.Multiline = true;
             this.Calcs.Name = "Calcs";
             this.Calcs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -195,7 +195,7 @@
             // Start_Btn
             // 
             this.Start_Btn.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Start_Btn.Location = new System.Drawing.Point(264, 271);
+            this.Start_Btn.Location = new System.Drawing.Point(264, 324);
             this.Start_Btn.Name = "Start_Btn";
             this.Start_Btn.Size = new System.Drawing.Size(163, 69);
             this.Start_Btn.TabIndex = 20;
@@ -207,7 +207,7 @@
             // 
             this.MaxMinLabel.AutoSize = true;
             this.MaxMinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaxMinLabel.Location = new System.Drawing.Point(163, 37);
+            this.MaxMinLabel.Location = new System.Drawing.Point(163, 90);
             this.MaxMinLabel.Name = "MaxMinLabel";
             this.MaxMinLabel.Size = new System.Drawing.Size(104, 18);
             this.MaxMinLabel.TabIndex = 36;
@@ -218,7 +218,7 @@
             this.checkBoxMax.AutoSize = true;
             this.checkBoxMax.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMax.Location = new System.Drawing.Point(333, 37);
+            this.checkBoxMax.Location = new System.Drawing.Point(333, 90);
             this.checkBoxMax.Name = "checkBoxMax";
             this.checkBoxMax.Size = new System.Drawing.Size(58, 22);
             this.checkBoxMax.TabIndex = 37;
@@ -229,7 +229,7 @@
             // 
             this.k_maxLabel.AutoSize = true;
             this.k_maxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.k_maxLabel.Location = new System.Drawing.Point(40, 37);
+            this.k_maxLabel.Location = new System.Drawing.Point(40, 90);
             this.k_maxLabel.Name = "k_maxLabel";
             this.k_maxLabel.Size = new System.Drawing.Size(48, 18);
             this.k_maxLabel.TabIndex = 39;
@@ -238,17 +238,17 @@
             // kmaxBox
             // 
             this.kmaxBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kmaxBox.Location = new System.Drawing.Point(95, 34);
+            this.kmaxBox.Location = new System.Drawing.Point(95, 87);
             this.kmaxBox.Name = "kmaxBox";
             this.kmaxBox.Size = new System.Drawing.Size(62, 21);
             this.kmaxBox.TabIndex = 38;
-            this.kmaxBox.Text = "200";
+            this.kmaxBox.Text = "1000";
             // 
             // ESM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 370);
+            this.ClientSize = new System.Drawing.Size(438, 444);
             this.Controls.Add(this.k_maxLabel);
             this.Controls.Add(this.kmaxBox);
             this.Controls.Add(this.checkBoxMax);
