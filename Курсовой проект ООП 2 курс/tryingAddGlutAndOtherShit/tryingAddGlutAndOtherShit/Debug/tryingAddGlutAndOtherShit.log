@@ -1,0 +1,32 @@
+﻿  main.cpp
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(57): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(97): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(136): warning C4305: '=': truncation from 'double' to 'float'
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(140): warning C4305: '=': truncation from 'double' to 'float'
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(149): warning C4305: '=': truncation from 'double' to 'float'
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(150): warning C4305: '=': truncation from 'double' to 'float'
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(151): warning C4305: '=': truncation from 'double' to 'float'
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(152): warning C4305: '=': truncation from 'double' to 'float'
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(192): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(192): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(196): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(196): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(196): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(207): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(241): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(244): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(290): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(292): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(302): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(303): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(312): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(354): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\main.cpp(441): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Road.cpp
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\road.cpp(21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\road.cpp(22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\road.cpp(23): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+d:\kstu\oop\tryingaddglutandothershit\tryingaddglutandothershit\road.cpp(24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  Generating Code...
+  tryingAddGlutAndOtherShit.vcxproj -> D:\KSTU\OOP\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.exe
+  tryingAddGlutAndOtherShit.vcxproj -> D:\KSTU\OOP\tryingAddGlutAndOtherShit\Debug\tryingAddGlutAndOtherShit.pdb (Partial PDB)
